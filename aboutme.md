@@ -11,7 +11,7 @@ ZONETECH 事業の基本情報
 連絡先情報
 事業用メールアドレス: yukihisa.s@zonetechyyyy.com
 ドメイン: zonetechyyyy.com
-事業用電話番号: 090-2980-6502
+事業用電話番号: 090-2980-5602
 
 
 税務関連情報
