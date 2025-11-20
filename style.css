@@ -1,5 +1,6 @@
 :root {
-    --bg-color: #111111;
+    --bg-color: #0e1410;
+    /* Slight green tint */
     --text-color: #FFFFFF;
     --text-secondary: #AAAAAA;
     --accent-color: #FF4500;
@@ -37,7 +38,8 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: #050805;
+    /* Darker green-black */
     z-index: 9999;
     display: flex;
     justify-content: center;
@@ -69,7 +71,8 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background: rgba(17, 17, 17, 0.9);
+    background: rgba(14, 20, 16, 0.9);
+    /* Greenish tint */
     backdrop-filter: blur(5px);
 }
 
@@ -140,7 +143,8 @@ a:hover {
 
 .scatter-item {
     position: absolute;
-    background: linear-gradient(45deg, #333, #111);
+    background: linear-gradient(45deg, #1a261a, #0e1410);
+    /* Greenish gradient */
     border: 1px solid rgba(255, 69, 0, 0.3);
     /* Subtle orange border */
     background-size: cover;
@@ -320,7 +324,8 @@ a:hover {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 10px 0;
     z-index: 1;
-    background: rgba(17, 17, 17, 0.8);
+    background: rgba(14, 20, 16, 0.8);
+    /* Greenish tint */
     /* Readability */
 }
 
