@@ -542,20 +542,31 @@ a:hover {
     }
 
     .hero-title {
-        font-size: 3.5rem;
-        /* Slightly smaller to ensure fit */
+        font-size: 12vw;
+        /* Responsive font size */
     }
 
     .circular-text-container {
-        width: 280px;
-        /* Adjusted for smaller screens */
-        height: 280px;
+        width: 80vw;
+        /* Responsive width */
+        height: 80vw;
+        max-width: 300px;
+        max-height: 300px;
     }
 
     .circular-text span {
-        transform-origin: 0 140px;
-        /* Half of 280px */
-        font-size: 0.8rem;
+        transform-origin: 0 40vw;
+        /* Half of 80vw */
+        font-size: 3.5vw;
+    }
+
+    /* Adjust transform origin max for larger mobile screens */
+    @media (min-width: 375px) {
+        .circular-text span {
+            transform-origin: 0 150px;
+            /* Half of max-width 300px */
+            font-size: 0.9rem;
+        }
     }
 
     .content-section {
@@ -568,13 +579,13 @@ a:hover {
         padding: 0 20px 20px;
         justify-content: flex-start;
         align-items: center;
-        /* Center align title on mobile */
     }
 
     .section-title-vertical h2 {
         writing-mode: horizontal-tb;
         transform: none;
-        font-size: 2.5rem;
+        font-size: 2rem;
+        /* Smaller title */
     }
 
     .section-content {
@@ -584,12 +595,14 @@ a:hover {
 
     .service-grid {
         grid-template-columns: 1fr;
-        /* Stack vertically on mobile */
         gap: 20px;
     }
 
-    .service-item {
-        padding: 30px;
+    .service-item,
+    .profile-card {
+        padding: 20px;
+        width: 100%;
+        /* Ensure it fits */
     }
 
     .business-info dt {
@@ -602,35 +615,45 @@ a:hover {
         margin-left: 0;
         margin-bottom: 20px;
         padding-left: 10px;
-        /* Indent slightly */
         border-left: 2px solid var(--accent-color);
-        /* Visual cue */
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+        /* Reduce subtitle size */
+        letter-spacing: 0.1em;
+        width: 90%;
+        text-align: center;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+        /* Reduce profile name size */
+    }
+
+    .profile-name-en {
+        display: block;
+        /* Stack English name */
+        margin-left: 0;
+        margin-top: 5px;
+        font-size: 0.9rem;
     }
 
     .contact-link {
-        font-size: 1.2rem;
-        /* Prevent overflow */
+        font-size: 1rem;
+        /* Fixed smaller size instead of vw */
         word-break: break-all;
     }
 
     .marquee-content {
-        font-size: 1rem;
-        /* Smaller text for mobile marquee */
+        font-size: 0.8rem;
     }
 
     .loading-text {
         font-size: 1rem;
-        /* Smaller loading text */
-    }
-
-    .profile-card,
-    .service-item {
-        padding: 20px;
-        /* Reduce padding on cards */
     }
 
     .scatter-item {
         opacity: 0.4;
-        /* Reduce opacity of background items on mobile */
     }
 }
