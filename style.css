@@ -512,18 +512,45 @@ a:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .site-header {
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .site-nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .site-nav a {
+        font-size: 0.8rem;
+    }
+
+    .hero-section {
+        height: 100dvh;
+        /* Use dynamic viewport height for mobile browsers */
+        padding-top: 80px;
+    }
+
     .hero-title {
-        font-size: 4rem;
+        font-size: 3.5rem;
+        /* Slightly smaller to ensure fit */
     }
 
     .circular-text-container {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        /* Adjusted for smaller screens */
+        height: 280px;
     }
 
     .circular-text span {
-        transform-origin: 0 150px;
-        font-size: 0.9rem;
+        transform-origin: 0 140px;
+        /* Half of 280px */
+        font-size: 0.8rem;
     }
 
     .content-section {
@@ -535,6 +562,8 @@ a:hover {
         width: 100%;
         padding: 0 20px 20px;
         justify-content: flex-start;
+        align-items: center;
+        /* Center align title on mobile */
     }
 
     .section-title-vertical h2 {
@@ -548,13 +577,55 @@ a:hover {
         padding: 0 20px;
     }
 
+    .service-grid {
+        grid-template-columns: 1fr;
+        /* Stack vertically on mobile */
+        gap: 20px;
+    }
+
+    .service-item {
+        padding: 30px;
+    }
+
     .business-info dt {
         width: 100%;
         float: none;
+        margin-bottom: 5px;
     }
 
     .business-info dd {
         margin-left: 0;
         margin-bottom: 20px;
+        padding-left: 10px;
+        /* Indent slightly */
+        border-left: 2px solid var(--accent-color);
+        /* Visual cue */
+    }
+
+    .contact-link {
+        font-size: 1.2rem;
+        /* Prevent overflow */
+        word-break: break-all;
+    }
+
+    .marquee-content {
+        font-size: 1rem;
+        /* Smaller text for mobile marquee */
+    }
+
+    .loading-text {
+        font-size: 1rem;
+        /* Smaller loading text */
+    }
+
+    .profile-card,
+    .service-item {
+        padding: 20px;
+        /* Reduce padding on cards */
+    }
+
+    .scatter-item {
+        opacity: 0.4;
+        /* Reduce opacity of background items on mobile */
     }
 }
