@@ -143,14 +143,15 @@ a:hover {
 
 .scatter-item {
     position: absolute;
-    background: linear-gradient(45deg, #1a261a, #0e1410);
-    /* Greenish gradient */
+    background-color: #0e1410;
+    /* Fallback */
     border: 1px solid rgba(255, 69, 0, 0.3);
     /* Subtle orange border */
     background-size: cover;
     background-position: center;
-    opacity: 0.7;
+    opacity: 0.8;
     border-radius: 4px;
+    box-shadow: 0 0 15px rgba(26, 255, 26, 0.1);
 }
 
 /* Scattered positions and sizes (Percentages relative to container) */
@@ -160,6 +161,7 @@ a:hover {
     height: 20%;
     top: 5%;
     left: 5%;
+    background-image: url('images/scatter-1.png');
 }
 
 .scatter-item.item-2 {
@@ -168,6 +170,7 @@ a:hover {
     top: 15%;
     left: 80%;
     border-radius: 50%;
+    background-image: url('images/scatter-2.png');
 }
 
 /* Circle */
@@ -176,6 +179,7 @@ a:hover {
     height: 10%;
     top: 30%;
     left: 20%;
+    background-image: url('images/scatter-3.png');
 }
 
 .scatter-item.item-4 {
@@ -183,6 +187,7 @@ a:hover {
     height: 25%;
     top: 40%;
     left: 60%;
+    background-image: url('images/scatter-4.png');
 }
 
 .scatter-item.item-5 {
@@ -191,6 +196,7 @@ a:hover {
     top: 60%;
     left: 10%;
     border-radius: 50%;
+    background-image: url('images/scatter-1.png');
 }
 
 .scatter-item.item-6 {
@@ -198,6 +204,7 @@ a:hover {
     height: 18%;
     top: 70%;
     left: 75%;
+    background-image: url('images/scatter-2.png');
 }
 
 .scatter-item.item-7 {
@@ -205,6 +212,7 @@ a:hover {
     height: 12%;
     top: 85%;
     left: 30%;
+    background-image: url('images/scatter-3.png');
 }
 
 .scatter-item.item-8 {
@@ -212,6 +220,7 @@ a:hover {
     height: 20%;
     top: 10%;
     left: 40%;
+    background-image: url('images/scatter-4.png');
 }
 
 /* Second set (Duplicates shifted by 50% of total height, which is 100% of view height) */
